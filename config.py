@@ -8,7 +8,6 @@ load_dotenv(env_file_path)
 
 class Config:
     FRAMES_PER_BUFFER = os.getenv("FRAMES_PER_BUFFER")
-    FORMAT = os.getenv("FORMAT")
     CHANNELS = os.getenv("CHANNELS")
     RATE = os.getenv("RATE")
     API_KEY = os.getenv("API_KEY")
