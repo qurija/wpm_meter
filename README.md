@@ -5,27 +5,29 @@ The project should contain a README that explains how to run the product and wha
 ## How to run
 
 ### Prerequisites
+(I'll leave my api_key available to make this less painful so you can skip first 3 steps)
 1) Sign up for AssemblyAI - https://app.assemblyai.com/signup
 2) Upgrade your account so you can use the live transcription feature - https://app.assemblyai.com/billing
-3) Add your API key (available [here](https://app.assemblyai.com/account)) to `.env` under `API_KEY` (I'll leave my key there to make this less painful)
-4) Install portaudio, for macOS `brew install portaudio`. Note: this app will not work on WSL since it is currently unable to utilize the audio interfaces of Windows. For more information, check http://files.portaudio.com/download.html.
+3) Add your API key (available [here](https://app.assemblyai.com/account)) to `.env` under `API_KEY`
 
 
 ### Running the terminal app
-1) Clone the project from github<><<><>>
+1) Install portaudio, for macOS `brew install portaudio`. Note: this app will not work on WSL since it is currently unable to utilize the audio interfaces of Windows. For more information, check http://files.portaudio.com/download.html.
 2) Change the cwd to project root
 3) Create a new python environment `python -m venv env`
 4) Activate the new environment `source /env/bin/activate`
 5) Install required libraries and dependencies `pip install -r requirements.txt`
 6) Run the terminal app `python wpm_meter.py`
 
+To stop the terminal app, use control + C.
+
 
 ## Features
 - Track your WPM rate in real time.
 - Get color coded indicators saying if you are talking too slowly or too quickly.
 - Get completed sentences in the terminal output.
-- Have all completed sentences stores in a text file.
 - Choose which input device you want to use.
+- Have all completed sentences stores in a text file.
 
 
 ## Problems I faced / Approach I took
